@@ -1,0 +1,287 @@
+/*
+Author: Mark Pfaff
+Theme: Lake Los Angeles
+*/
+/*
+Theme Name: Lake Los Angeles
+Theme URI: http://markpfaff.com/projects/lake-los-angeles/wordpress
+Author: Mark Pfaf
+Author URI: http://markpfaff.com
+Description: New website design for Lake Los Angeles and ITC 285 Capstone Project
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lakelosangeles
+
+*/
+/* line 2, sass/_custom-reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, sass/_custom-reset.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 11, sass/_custom-reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* Typography*/
+/*body*/
+@font-face {
+  font-family: 'garamond';
+  src: url("../fonts/AppleGaramondLight.eot?#iefix") format("embedded-opentype"), url("../fonts/AppleGaramondLight.woff") format("woff"), url("../fonts/AppleGaramondLight.ttf") format("truetype"), url("../fonts/AppleGaramondLight.svg#AppleGaramondLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*headline*/
+@font-face {
+  font-family: 'liberation';
+  src: url("../fonts/LiberationSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LiberationSans-Bold.woff") format("woff"), url("../fonts/LiberationSans-Bold.ttf") format("truetype"), url("../fonts/LiberationSans-Bold.svg#LiberationSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 27, sass/_typography.scss */
+html {
+  font-size: 100%;
+}
+@media (min-width: 768px) {
+  /* line 27, sass/_typography.scss */
+  html {
+    font-size: 110%;
+  }
+}
+@media (min-width: 1030px) {
+  /* line 27, sass/_typography.scss */
+  html {
+    font-size: 125%;
+  }
+}
+
+/* line 37, sass/_typography.scss */
+body {
+  font-family: 'garamond', san-serif;
+  background-color: #fef5e6;
+}
+/* line 40, sass/_typography.scss */
+body p {
+  font-weight: 300;
+}
+
+/* line 46, sass/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'liberation', sans-serif;
+  padding-top: 20px;
+  color: #000;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 58, sass/_typography.scss */
+h1 {
+  font-size: 3rem;
+  line-height: 3.7rem;
+}
+
+/* line 63, sass/_typography.scss */
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding: 20px 0;
+}
+
+/* line 69, sass/_typography.scss */
+h3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-top: 10px;
+}
+
+/* line 74, sass/_typography.scss */
+h4 {
+  font-size: 1.15rem;
+  line-height: 1.85rem;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+/* line 80, sass/_typography.scss */
+h5 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 86, sass/_typography.scss */
+.menu-item a {
+  font-family: 'liberation', sans-serif;
+}
+
+/* line 90, sass/_typography.scss */
+blockquote {
+  font-size: 1.4em;
+  color: #838C99;
+  background-color: rgba(208, 208, 208, 0.2);
+  font-style: italic;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  clear: both;
+}
+
+/* line 102, sass/_typography.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 105, sass/_typography.scss */
+a.no-hover:hover {
+  text-decoration: none;
+}
+
+/* line 110, sass/_typography.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 114, sass/_typography.scss */
+.work-title {
+  margin-bottom: 40px;
+}
+
+/* line 118, sass/_typography.scss */
+strong {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+/* line 123, sass/_typography.scss */
+p {
+  font-size: 1.15rem;
+  line-height: 1.85rem;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media (min-width: 1030px) {
+  /* line 123, sass/_typography.scss */
+  p {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* line 134, sass/_typography.scss */
+.row .float-p-container p {
+  width: 100%;
+}
+
+/* line 138, sass/_typography.scss */
+.row p {
+  width: 90%;
+  margin: 20px auto;
+}
+@media (min-width: 1030px) {
+  /* line 138, sass/_typography.scss */
+  .row p {
+    width: 70%;
+  }
+}
+
+/* line 146, sass/_typography.scss */
+.small-label {
+  clear: both;
+}
+
+/* line 1, sass/_layout.scss */
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* line 1, sass/_blog.scss */
+.blog-container {
+  padding: 100px 75px;
+  width: 60%;
+}
+
+/* line 3, sass/_menus.scss */
+li.journal-menu-item a {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 20px;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+/* line 17, sass/_menus.scss */
+li.about-menu-item a {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 120px;
+}
+
+/* line 27, sass/_menus.scss */
+li.portfolio-menu-item a {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 20px;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
+
+/* line 41, sass/_menus.scss */
+li.current-menu-item a {
+  text-decoration: underline;
+}
+
+/* line 45, sass/_menus.scss */
+ul#menu-main {
+  list-style-type: none;
+}
+
+/* line 49, sass/_menus.scss */
+img#logo {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+/* line 1, sass/_portfolio.scss */
+.portfolio-container {
+  padding: 100px 75px;
+  width: 60%;
+}

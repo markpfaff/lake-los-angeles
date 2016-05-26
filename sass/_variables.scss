@@ -1,0 +1,55 @@
+$container-width: 750px;
+$container-height: 440px;
+
+$base-font-size: 1rem;
+$base-line-height: 1rem;
+
+$type-settings: (
+  xsmall: (
+    font-size: 1rem,
+    line-height: 1.2rem
+  ),
+  small: (
+    font-size: 1.15rem,
+    line-height: 1.85rem
+  ),
+  mediumsmall: (
+    font-size: 1.4rem,
+    line-height: 2rem
+  ),
+  medium: (
+    font-size: 1.8rem,
+    line-height: 2.25rem
+  ),
+  large: (
+    font-size: 2.5rem,
+    line-height: 3rem
+  ),
+  xlarge: (
+    font-size: 3rem,
+    line-height: 3.7rem
+  )
+);
+
+
+@function type-scale($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'line-height');
+}
+
+@mixin type-setting($level) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+}
+
+@function recipe-color($name) {
+  @return map-get($recipe-colors, $name);
+};
+
+
+

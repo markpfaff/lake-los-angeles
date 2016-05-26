@@ -1,0 +1,148 @@
+/* Typography*/
+
+
+/*body*/
+@font-face {
+  font-family: 'garamond';
+  src: url('../fonts/AppleGaramondLight.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/AppleGaramondLight.woff') format('woff'), 
+       url('../fonts/AppleGaramondLight.ttf')  format('truetype'), 
+       url('../fonts/AppleGaramondLight.svg#AppleGaramondLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*headline*/
+@font-face {
+  font-family: 'liberation';
+  src: url('../fonts/LiberationSans-Bold.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/LiberationSans-Bold.woff') format('woff'), 
+       url('../fonts/LiberationSans-Bold.ttf')  format('truetype'), 
+       url('../fonts/LiberationSans-Bold.svg#LiberationSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+    font-size:100%;
+    @include tablet{
+        font-size:110%;
+    }
+    @include desktop{
+        font-size:125%;
+    }
+}
+
+body {
+    font-family: 'garamond', san-serif;
+    background-color:#fef5e6;
+    p {
+        font-weight:300;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'liberation', sans-serif;
+    padding-top: 20px;
+    color:#000;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+h1 {
+    @include type-setting(xlarge);
+
+}
+
+h2 {
+    @include type-setting(large);
+    padding:20px 0;
+
+}
+
+h3 {
+    @include type-setting(mediumsmall);
+    padding-top: 10px;
+}
+
+h4 {
+    @include type-setting(small);
+    padding:10px 0 0 0;
+    margin:0;
+}
+
+h5 {
+    @include type-setting(xsmall);
+    padding:0;
+    margin:0;
+}
+
+.menu-item a {
+    font-family: 'liberation', sans-serif;
+}
+
+blockquote {
+    font-size:1.4em;
+    color: #838C99;
+    background-color:rgba(208,208,208,0.2);
+    font-style: italic;
+    padding:20px;
+    margin: 10px;
+    border-radius:10px;
+    clear:both;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+  &.no-hover:hover {
+    text-decoration: none;
+  }
+}
+
+.italic {
+    font-style:  italic;
+}
+
+.work-title {
+    margin-bottom:40px;
+}
+
+strong {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+p {
+    @include type-setting(small); 
+    margin-right:20px;
+    margin-left:20px;
+    @include desktop {
+        margin-right:0px;
+        margin-left:0px;
+    }
+}
+
+
+.row .float-p-container p {
+    width: 100%;
+}
+
+.row p {
+    width: 90%;
+    margin: 20px auto;
+    @include desktop {
+        width:70%;
+    }
+}
+
+.small-label {
+    clear:both;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "lake-los-angeles",
+  "version": "1.0.0",
+  "description": "Lake Los Angeles Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markpfaff/lake-los-angeles.git"
+  },
+  "author": "Mark Pfaff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markpfaff/lake-los-angeles/issues"
+  },
+  "homepage": "https://github.com/markpfaff/lake-los-angeles#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-livereload": "^0.1.3"
+  }
+}
