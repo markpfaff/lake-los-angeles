@@ -1,5 +1,25 @@
-.portfolio-container {
-    padding: 100px 75px;
-    width:60%;
+//.portfolio-container
+body.page-id-12 {
+    width: 2400px;
+    height: 100vh;
+    position: relative;
+    overflow-y:hidden;
+
+    .media-container {
+        margin: 0px;
+        width: 800px;
+        height: 100vh;
+        float:right;
+        
+        .media-thumbnail{
+            width: 400px;
+            float:left;            
+        }
+        .media-description {
+            width: 400px;
+            float:left;
+        }
+ 
+    }
 }
 

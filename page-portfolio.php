@@ -73,11 +73,9 @@ get_header();
 ?>
         <?php wp_reset_postdata(); ?>
 
-    <?php frame_content_nav( 'nav-below' ); ?>
-
   </div><!-- #posts -->
 
 <?php endif; ?>
-<small class="small-label">page-portfolio.php</small>
-
+    <small class="small-label">page-portfolio.php</small>
+</div>
 <?php get_footer();?>

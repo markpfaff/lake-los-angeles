@@ -34,7 +34,7 @@ if (!is_admin()) {
 
     }
     
-    function wsma_scripts() {
+    function lakela_scripts() {
         
         // unload bundled jQuery and load from cdn for faster load time
 		wp_deregister_script('jquery');
@@ -42,11 +42,17 @@ if (!is_admin()) {
 		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), null, false);
 		//load jQuery before other js that require jQuery
         wp_enqueue_script('jquery');
+        
+        //scroll right to left on portfolio page
+		wp_enqueue_script('scroll-rtl', get_template_directory_uri() . '/js/scroll-rtl.js', array('jquery'), null, false);
+		
 
         //true will load in footer which is usually what you want, false is header
     }
     //add styles before adding scripts hence the order 11 then 12
     add_action( 'wp_enqueue_scripts', 'lakela_styles', 11 );
+    add_action( 'wp_enqueue_scripts', 'lakela_scripts', 12 );
+
 }
 
 
