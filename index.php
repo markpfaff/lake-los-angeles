@@ -24,6 +24,7 @@
 ?>
 <?php get_header(); ?>
 
+<div class="journal-container m-header scene_element scene_element--fadeinright">
 
     <div class="container">
 
@@ -53,6 +54,6 @@
             <?php endif; ?>
 
     </div><!-- /container -->
-
+</div><!-- /journal-container -->
 <small class="small-label">index.php</small>
 <?php get_footer(); ?>

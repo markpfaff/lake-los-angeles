@@ -1,6 +1,11 @@
 
+/*make sure menu items are always infront*/
+.menu-item a,
+.logo-desktop {
+    z-index: 999999;
+}
 
-li.journal-menu-item a {
+li.portfolio-menu-item a {
     position:fixed;
     top:0;
     bottom:0;
@@ -22,9 +27,14 @@ li.about-menu-item a {
     margin-left:auto;
     margin-right:auto;
     bottom:120px;
+    display:none;
 }
 
-li.portfolio-menu-item a {
+.display-block {
+    display:block !important;
+}
+
+li.journal-menu-item a {
     position:fixed;
     top:0;
     bottom:0;
@@ -46,12 +56,34 @@ ul#menu-main {
     list-style-type: none;
 }
 
-img#logo {
+.logo-desktop {
     position:fixed;
     bottom:20px;
     right:0;
     left:0;
     margin-left:auto;
     margin-right:auto;
-    width: 300px;
+    width: 30%;
+    height: 10%;
+    background-image: url('images/logo.png');
+    background-repeat:no-repeat;
+    background-size: contain ;
+}
+
+.logo-desktop.dark {
+    background-image: url('images/logo-light.png');
+}
+
+.logo-desktop.light {
+    background-image: url('images/logo.png');
+}
+
+/*change color on background change*/
+
+ul#menu-main.dark li a {
+    color:#FFFCF6;
+}
+
+ul#menu-main.light li a {
+    color:#000;
 }

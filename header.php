@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
     <head>
         <!-- Remy Sharp Shim -->
         <!--[if lt IE 9]>
@@ -16,27 +16,21 @@
         <?php wp_head(); ?>
     </head>
         
-    <body <?php body_class(); ?>>
+    <body <?php body_class();?>>
 
             <header>
-
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="logo-desktop"><!-- logo -->
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="Lake Los Angeles Logo" id="logo"/>
-                            </a>
-                        </div><!-- /#logo -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-
-                
                 <div class="nav" role="navigation">
                     <div class="container">
 
                         <div class="main-menu" id="main-menu">
+                            <div class="reveal-about-container"></div> 
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                <div class="logo-desktop">                                
+                                
+                                </div><!-- /#logo -->
+                            </a>
                             <ul class="nav">
+                                
                                  <?php
                                     wp_nav_menu( array(
                                         'menu'              => 'Main Menu',                

@@ -1,25 +1,273 @@
-//.portfolio-container
-body.page-id-12 {
-    width: 2400px;
-    height: 100vh;
-    position: relative;
-    overflow-y:hidden;
 
+.portfolio-container {
+    position: absolute;
+    width: 4800px * 3;
+    overflow-y: hidden;
+    top: 0;
+    bottom: 0;
+    
     .media-container {
+        position:absolute;
         margin: 0px;
-        width: 800px;
+        width: 4800px;
         height: 100vh;
-        float:right;
+        left:0;
+        top:0;
         
-        .media-thumbnail{
-            width: 400px;
-            float:left;            
-        }
-        .media-description {
-            width: 400px;
+        .media-inner-container {
             float:left;
+            
+            .media-thumbnail{
+                height:30vh;
+                width:20%;
+                float:left; 
+                padding:20px;
+                
+                
+                img {
+                    width: 85%;
+                    height: auto;
+                }
+                
+            }
+            .media-description {
+                width: 20%;
+                float:left;
+                padding:20px 80px;
+            }
         }
+
  
     }
 }
 
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+/* line 10, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* line 17, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+
+/* line 22, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* line 1146, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+/* line 1251, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+/* line 1286, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+/* line 1321, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+/* line 1356, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig; }
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+//page transitions
+
+/* @mixin respond-to
+------------------------------------------------------------------- */
+/* line 6, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+/* line 17, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+/* line 27, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene .scene_element--fadeinright {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+.m-scene .scene_element--fadeinleft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+.m-scene .scene_element--fadeinleftbig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig; }
+/* line 32, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene .scene_element--delayed {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+/* line 37, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+/* line 42, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene.is-exiting .scene_element--delayed {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+/* line 47, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+.m-scene.is-exiting .scene_element--noexiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+
+@media screen and (min-width: 768px) {
+  /* line 58, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+  .m-scene .scene_element--fadeinright-wide {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight; } 
+}

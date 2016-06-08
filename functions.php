@@ -39,13 +39,21 @@ if (!is_admin()) {
         // unload bundled jQuery and load from cdn for faster load time
 		wp_deregister_script('jquery');
         //load from cdn
-		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), null, false);
+		wp_register_script('jquery', '//code.jquery.com/jquery-2.2.4.min.js', array(), null, false);
 		//load jQuery before other js that require jQuery
         wp_enqueue_script('jquery');
+
+        //modernizr
+		wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array('jquery'), null, false);
+		
+        //jquery.smoothState
+		wp_enqueue_script('jquery-smoothState', get_template_directory_uri() . '/js/jquery.smoothState.js', array('jquery'), null, false);
         
         //scroll right to left on portfolio page
-		wp_enqueue_script('scroll-rtl', get_template_directory_uri() . '/js/scroll-rtl.js', array('jquery'), null, false);
-		
+		wp_enqueue_script('menu-hover', get_template_directory_uri() . '/js/menu-hover.js', array('jquery'), null, false);
+
+        //custom-background-slider
+		//wp_enqueue_script('custom-background-slider', get_template_directory_uri() . '/js/custom-background-slider.js', array('jquery'), null, false);
 
         //true will load in footer which is usually what you want, false is header
     }
@@ -276,3 +284,13 @@ add_action('edit_form_after_title', function() {
 
 //add thumbnail support
 add_theme_support( 'post-thumbnails' );
+
+
+//add custom body class to home
+//add_filter( 'body_class', 'add_body_class' );
+//function add_body_class( $classes ) {
+//	// add 'class-name' to the $classes array
+//	if(is_page()) $classes[] = 'm-scene';
+//	// return the $classes array
+//	return $classes;
+//}

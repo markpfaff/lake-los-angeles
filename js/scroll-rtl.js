@@ -1,7 +1,40 @@
 $(document).ready(function(){
-    $('body').scrollLeft($(this).width());
-    console.log('update');
+    $('.portfolio-container').scrollLeft($(this).width());
+                        console.log('it worked');
+
+//    'use strict';
+//    var $page = $('#main'),
+//      options = {
+//        debug: true,
+//        prefetch: true,
+//        cacheLength: 2,
+//        onStart: {
+//          duration: 250, // Duration animation
+//          render: function ($container) {
+//            // CSS animation reversing class
+//            $container.addClass('is-exiting');
+//            // Restart animation
+//            smoothState.restartCSSAnimations();
+//            
+//          }
+//        },
+//        onReady: {
+//          duration: 0,
+//          render: function ($container, $newContent) {
+//            // CSS animation reversing class
+//            $container.removeClass('is-exiting');
+//            // Inject new content
+//            $container.html($newContent);
+//
+//          }
+//        }
+//      },
+//      smoothState = $page.smoothState(options).data('smoothState');
 });
+//            if($newContent.hasClass('.portfolio-container')){
+//                console.log('it worked');
+//            }
+                //$('.portfolio-container').scrollLeft($newContent.width());
 
 //$(function() {
 //  $('ul.nav a').bind('click', function(event) {
