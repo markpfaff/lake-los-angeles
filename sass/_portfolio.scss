@@ -1,7 +1,7 @@
 
 .portfolio-container {
     position: absolute;
-    width: 4800px * 3;
+    width: 4000px * 3;
     overflow-y: hidden;
     top: 0;
     bottom: 0;
@@ -14,6 +14,10 @@
         left:0;
         top:0;
         
+        &.portfolio-post-1{
+            padding-left: 100px;
+        }
+        
         .media-inner-container {
             float:left;
             
@@ -23,6 +27,9 @@
                 float:left; 
                 padding:20px;
                 
+                .caption-text {
+                    width: 85%;
+                }
                 
                 img {
                     width: 85%;
@@ -31,9 +38,16 @@
                 
             }
             .media-description {
-                width: 20%;
+                width: 100%;
                 float:left;
-                padding:20px 80px;
+                padding:40px 20px 0 20px;;
+                
+                h2,
+                h3,
+                p {
+                    float:left;
+                    clear:both;
+                }
             }
         }
 

@@ -28,7 +28,7 @@ get_header();
         
         <div class="media-container portfolio-post-<?php echo $count;?>"
              <?php if($count > 1){
-                        echo 'style="left:'. (4800 * ($count-1)) .'px"';
+                        echo 'style="left:'. (4000 * ($count-1)) .'px"';
              }?>
              
              >
@@ -49,15 +49,16 @@ get_header();
                     <!--Article Description-->
                         <?php the_content(); ?>
                     <!--Article Link-->
-                        <h3>
-                        <?php $link = get_post_meta( get_the_ID(), '_la_portfolio_link', TRUE );?>
-                            <a href="<?php echo $link;?>">Read More</a>
-                        </h3>
+<!--                        <h3>
+                        <?php //$link = get_post_meta( get_the_ID(), '_la_portfolio_link', TRUE );?>
+                            <a href="<?php //echo $link;?>">Read More</a>
+                        </h3>-->
                 </div>                  
                 <div class="media-thumbnail">
                     <?php 
                         if ( has_post_thumbnail() ) {
                             the_post_thumbnail('large');
+                            echo '<div class="caption-text">' . get_post(get_post_thumbnail_id())->post_excerpt . '</div>';
                           } 
                     ?>
                 </div>
@@ -75,7 +76,7 @@ get_header();
                                 $fullImage = $dynamic_featured_image->get_image_url($id,'full'); 
                                 $caption = $dynamic_featured_image->get_image_caption( $fullImage );
 
-                                echo "      <div><img src=\"".$fullImage."\" alt=\"".$caption."\"><div class=\"captionText\">".$caption."&nbsp;</div></div>";
+                                echo "      <div><img src=\"".$fullImage."\" alt=\"".$caption."\"><div class=\"caption-text\">".$caption."&nbsp;</div></div>";
                                 echo '</div>';
                                 $i++;
                             }

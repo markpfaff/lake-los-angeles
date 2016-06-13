@@ -59,10 +59,9 @@ h4,
 h5 {
     font-family: 'liberation-bold', sans-serif;
     text-transform: uppercase;
-    padding-top: 20px;
     color:#000;
-    padding-bottom:20px;
     text-align: center;
+    margin:0;
 }
 
 h1 {
@@ -72,7 +71,7 @@ h1 {
 
 h2 {
     @include type-setting(small);
-    padding:20px 0;
+    padding:10px 0 0 0;
     font-family: 'liberation-reg', sans-serif;
 }
 
